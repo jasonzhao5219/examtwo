@@ -1,0 +1,9 @@
+<a [routerLink]="['/']"> Home</a> 
+<h1>New Question</h1>
+
+<form (submit)="questionsubmit()">
+	Question<input type="text" name="aab" width="200" [(ngModel)]="tempQuestion.question">
+	Description(Option)<input type="text" name="aac" width="200" [(ngModel)]="tempQuestion.description">
+	<button>Cancel</button>
+	<input type="submit" name="bbb" value="Submit">
+</form>

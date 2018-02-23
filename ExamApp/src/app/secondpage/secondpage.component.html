@@ -1,0 +1,8 @@
+<p>
+  secondpage works!
+</p>
+<a [routerLink]="['/new_question']"> Add a question</a>  
+<h5>Question--Answers--Action</h5>
+<h5>Search Bar</h5>
+ <form (submit)="searchsubmit()"><input type="text" name="ssa" [(ngModel)]="authorInSearchBar"><input type="submit" name="ddh" value="Search"></form>
+<div *ngFor="let ques of tempArray[0]">{{ques.question}}--{{ques.NumOfAnswer}}--<form (submit)="showsubmit(ques._id)"><input type="submit" name="Show" value="Show"></form><form (submit)="answersubmit(ques._id)"><input type="submit" name="Answer" value="Answer"></form></div>       

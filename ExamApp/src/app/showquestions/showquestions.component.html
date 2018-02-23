@@ -1,0 +1,11 @@
+<a [routerLink]="['/']"> Home</a> 
+<a [routerLink]="['/question',id,'new_answer']"> Answer this question</a> 
+
+<h3>{{tempObj.question}}</h3>
+<h5>{{tempObj.description}}</h5>
+
+
+<h1>Answers: </h1>
+<div *ngFor="let ans of tempArray[0]"><p>Answer`s Name: {{ans.name}}</p><p>{{ans.answers}}</p><p>{{ans.likes}} likes: <button (click)="addonelike(ans)" value="Like"></button></p></div>
+
+

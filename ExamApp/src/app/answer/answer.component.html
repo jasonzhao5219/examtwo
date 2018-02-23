@@ -1,0 +1,10 @@
+<a [routerLink]="['/']"> Home</a> 
+<a [routerLink]="['/question',id]"> Go back to Question page</a> 
+<h1>{{tempObj.question}}</h1>
+
+<form (submit)="answersubmit()">
+	Your Answer<input type="text" name="hh" [(ngModel)]="AnswerTempObj.answer">
+	Supporting Details<input type="text" name="hha" [(ngModel)]="AnswerTempObj.detail">
+	<button>Cancel</button>
+	<input type="submit" name="hhj" value="Submit">
+</form>
